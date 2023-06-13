@@ -31,6 +31,8 @@ def server():
     lines.decode('utf-8')
     num = int(lines)
 
+    # 
+    # BEGIN STUDENT CONTRIBUTION:
     # receive and reverse line by line, put into file
     # https://www.pythontutorial.net/python-basics/python-write-text-file/
     with open('out-proj.txt', 'w') as f:
@@ -43,6 +45,8 @@ def server():
             reverse += "\n"
             f.write(reverse)
             # print("[S]: Data received from client (backwards): {}".format(reverse))
+    # END STUDENT CONTRIBUTION
+    #
 
     # Close the server socket
     ss.close()
